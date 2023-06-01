@@ -1,0 +1,205 @@
+.main {
+  margin-top: 3rem;
+}
+
+.text {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.text-2 {
+  line-height: 1.8;
+  max-width: 850px;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.collectives {
+  margin: 1rem;
+  font-style: italic;
+}
+
+.span {
+  color: blue;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.image {
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  object-fit: cover;
+}
+
+.quote {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quote h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 370px;
+}
+
+.weigh {
+  font-weight: 100;
+  color: slategray;
+  margin-top: 4px;
+  font-family: cursive;
+}
+
+.marketing-cars {
+  height: 300px;
+  object-fit: cover;
+}
+
+.person-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  margin-top: 1rem;
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.contain-img {
+  display: flex;
+}
+.person-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.text-4 {
+  font-weight: bolder;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  display: flex;
+  margin: 3rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 590px;
+  margin-left: 1em;
+}
+
+.speech {
+  line-height: 1.6;
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.stat {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2em;
+  gap: 15px;
+}
+
+.box {
+  flex: 1;
+}
+
+.stats h4 {
+  font-weight: 400;
+}
+
+@media (max-width: 330px) {
+  .person-img {
+    margin: 0em;
+  }
+
+  .person {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    margin: 0.5rem;
+  }
+  .text {
+    font-size: 2rem;
+  }
+  .text-4 {
+    font-size: 2rem;
+  }
+  .person-img {
+    margin: 1em;
+  }
+  .person-img2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .text-2 {
+    margin: 0.5em;
+  }
+
+  .collectives {
+    display: none;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+  }
+
+  .marketing-cars {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+
+  .contain-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.5em;
+  }
+  .box {
+    margin: 0;
+  }
+}

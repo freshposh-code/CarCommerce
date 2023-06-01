@@ -1,0 +1,95 @@
+.features .radius {
+  background: linear-gradient(95deg, #465cff 0%, #90ce49 140%);
+  height: 580px;
+  width: 580px;
+  margin-top: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  transform-origin: left;
+}
+
+.image img {
+  position: absolute;
+  left: 1rem;
+  bottom: -0.1rem;
+  width: 95%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.caps-container .caps-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.caps-container .caps-list .caps {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.caps-container .caps-list .caps h1 {
+  font-family: sans-serif;
+}
+
+.caps-container .caps-list .caps p {
+  font-weight: bold;
+  color: #465cff;
+  text-transform: uppercase;
+}
+
+.feature-slide-container {
+  background: linear-gradient(#001dfc 30%, rgb(0, 0, 151));
+  color: #fff;
+  transform: skewX(15deg);
+  padding: 1em;
+  text-align: center;
+  margin: 1rem;
+  max-width: 350px;
+}
+
+@media (max-width: 350px) {
+  .features .contain .radius {
+    background: linear-gradient(95deg, #465cff 0%, #90ce49 140%);
+    height: 230px;
+    width: 230px;
+  }
+
+  .caps-container .caps-list .caps h1 {
+    font-size: 1.2rem;
+  }
+
+  .caps-container .caps-list .caps p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contain .radius {
+    background: linear-gradient(95deg, #465cff 0%, #90ce49 140%);
+    height: 305px;
+    width: 305px;
+  }
+
+  .image img {
+    position: absolute;
+    left: 1rem;
+    bottom: -0.1rem;
+    width: 75%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .caps-list .caps p {
+    font-size: 1.2rem;
+  }
+}

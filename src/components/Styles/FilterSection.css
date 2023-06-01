@@ -1,0 +1,222 @@
+:root {
+  --Color-Blue: blue;
+  --Color-White: white;
+  --Color-Black: black;
+  --Color--Liblue: #1888ff;
+  --Color-BlackAsh2: rgb(209, 209, 209);
+  --color-Redishrange: rgb(255, 89, 0);
+}
+
+.Box-container {
+  background: var(--Color-BlackAsh2);
+  height: auto;
+}
+
+.Box-container h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.B-contain h4 {
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+.view h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.my-option {
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.my-option2 {
+  padding: 0.8rem;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.filter {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  background: var(--Color-White);
+  padding: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.trans h3 {
+  text-align: center;
+}
+
+.div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 40px;
+}
+
+.tran {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.tran1 {
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+}
+
+.specs .preview-specs {
+  background: var(--Color-White);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.specs .preview-specs .spec-image img {
+  width: 17rem;
+  height: auto;
+  border-right: 1px solid var(--Color-BlackAsh2);
+}
+
+.specs .preview-specs .full-spec {
+  margin: 1rem;
+}
+
+.specs .preview-specs .spec {
+  background: var(--Color-White);
+  display: flex;
+  gap: 1.5rem;
+  flex: 1 1 20rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  padding: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.specs-content h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.specs-content p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.in-spec {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.in-spec p {
+  font-family: sans-serif;
+}
+
+.in-spec span {
+  color: var(--color-Redishrange);
+  font-family: fantasy;
+}
+
+.specs-content h5 {
+  border: 1px solid var(--color-Redishrange);
+  background: var(--color-Redishrange);
+  color: var(--Color-White);
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+  margin: 5px auto;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.specs-content h5:hover {
+  background: var(--color-white);
+  color: var(--Color-Black);
+  transition: all 0.4s ease-in-out;
+}
+
+.rating {
+  color: var(--Color--Liblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 330px) {
+  .specs .preview-specs .spec-image img {
+    width: 13rem;
+    height: auto;
+  }
+  .specs .preview-specs .full-spec {
+    margin: 0.2px;
+  }
+
+  .specs-content .span h5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .specs-content .span h5 {
+    margin: auto;
+    width: 80%;
+  }
+  .specs .preview-specs {
+    width: 100%;
+    padding: 1rem;
+  }
+  .specs .preview-specs .spec {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .filter {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .Box-container h3 {
+    font-family: cursive;
+    text-align: center;
+  }
+
+  .specs .preview-specs .spec {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .specs .preview-specs .full-spec {
+    margin: 0rem;
+  }
+
+  .specs .preview-specs .spec-image img {
+    border: none;
+  }
+
+  .in-spec {
+    display: inline-block;
+  }
+  .specs-content h5 {
+    width: 60%;
+    padding: 1.3rem;
+  }
+}

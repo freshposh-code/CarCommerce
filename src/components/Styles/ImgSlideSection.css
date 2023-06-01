@@ -1,0 +1,122 @@
+.swiper {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.swiper img {
+  width: 100%;
+  height: 90vh;
+  object-fit: contain;
+}
+
+.slide-container {
+  padding: 60px;
+  color: var(--Color-White);
+  position: absolute;
+  top: 12rem;
+  z-index: 1000;
+  animation: move 3s 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+.slide-text h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+.swiper img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.slide-text h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+.slide-text p {
+  font-size: 1.5rem;
+  font-family: font-serif;
+  max-width: 450px;
+}
+
+@media (max-width: 900px) {
+  .slide-container {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .slide-text h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  .slide-text p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    margin-top: 1.5rem;
+  }
+  .slide-container .slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 555px) {
+  .slide-container {
+    text-align: center;
+    line-height: 1.2;
+  }
+  .slide-text h1 {
+    font-size: 2.2rem;
+  }
+  .slide-text h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .slide-text p {
+    margin-top: 1.5rem;
+    font-size: 1.5em;
+  }
+
+  .slide-container .slide-text p {
+    max-width: 150px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .slide-text h1 {
+    font-size: 1.9rem;
+  }
+  .slide-text h3 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .slide-text p {
+    margin-top: 1.5rem;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}

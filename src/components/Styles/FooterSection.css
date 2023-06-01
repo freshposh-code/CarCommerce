@@ -1,0 +1,200 @@
+:root {
+  --Color-Blue: blue;
+  --Color-White: white;
+  --color-whiteSmoke: whitesmoke;
+  --Color-Black: black;
+  --Color--Liblue: #1888ff;
+  --Color-Gold: rgb(255, 220, 22);
+  --Color-BlackAsh: rgb(61, 60, 60);
+  --color-Redishrange: rgb(255, 89, 0);
+}
+
+.footer {
+  display: flex;
+  gap: 4.3rem;
+  padding: 2rem;
+  background: rgb(32, 32, 32);
+  color: var(--Color-White);
+  min-height: 65vh;
+}
+
+.f-point1 .fpoint1-content {
+  line-height: 1.5;
+}
+
+.f-point1 .fpoint1-content h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 7px;
+}
+
+.car-logo {
+  background: var(--color-Redishrange);
+  padding: 1rem;
+}
+.p-tag {
+  line-height: 1.2;
+  width: 350px;
+}
+
+.media {
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
+
+.fb- {
+  background: rgb(28, 28, 107);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.tw- {
+  background: rgb(57, 86, 160);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.ld- {
+  background: rgb(65, 65, 238);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.G- {
+  background: red;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.in- {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 11%,
+    rgba(253, 29, 29, 1) 59%,
+    rgba(252, 176, 69, 1) 93%
+  );
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.f-point2 {
+  margin-top: 5px;
+}
+
+.fpoint2-content {
+  line-height: 2.5;
+}
+
+.f-point2 .fpoint2-content h2 {
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav-link {
+  color: var(--Color-White);
+  text-decoration: overline;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.nav-link:hover {
+  transition: all 0.2s ease-in;
+  color: var(--Color--Liblue);
+}
+
+.f-point3 .fpoint3-content {
+  line-height: 2.2;
+  padding: 0.5em;
+}
+
+.f-point3 .fpoint3-content h2 {
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.display-p {
+  display: flex;
+  text-transform: capitalize;
+  gap: 0.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.f-point5 .fpoint5-content {
+  padding: 0.5em;
+}
+
+.f-point5 .fpoint5-content h2 {
+  line-height: 2.5;
+}
+
+.fpoint5-content h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.gallery-images img {
+  object-fit: cover;
+  width: 80px;
+  height: 50px;
+}
+
+@media (max-width: 395px) {
+  .fpoint5-content h2 {
+    font-size: 20px;
+  }
+
+  .fpoint1-content h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-images img {
+    object-fit: cover;
+    width: 60px;
+    height: 50px;
+  }
+  .fb- {
+    font-size: 0.9em;
+  }
+  .tw- {
+    font-size: 0.9em;
+  }
+  .ld- {
+    font-size: 0.9em;
+  }
+  .G- {
+    font-size: 0.9em;
+  }
+  .in- {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .fpoint1-content .car-logo {
+    padding: 0.5rem;
+    font-size: 15px;
+  }
+
+  .p-tag {
+    width: 100%;
+  }
+}

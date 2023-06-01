@@ -1,0 +1,365 @@
+:root {
+  --Color-Blue: blue;
+  --Color-White: white;
+  --Color-Black: black;
+  --Color--Liblue: #1888ff;
+}
+
+.cars {
+  border: 1px solid var(--Color-Blue);
+  background: linear-gradient(
+    190deg,
+    rgb(30, 30, 129) 0%,
+    rgb(201, 23, 23) 100%
+  );
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.fixed {
+  min-height: 80px;
+}
+
+.navbar {
+  background: linear-gradient(
+    390deg,
+    rgb(16, 14, 14) 70%,
+    rgb(31, 31, 31) 250%
+  );
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 1002;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar h2 {
+  color: white;
+  font-family: monospace;
+}
+
+.navbar-logo {
+  color: var(--Color-White);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-links {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: var(--Color-White);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: var(--Color--Liblue);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .fixed {
+    min-height: -80px;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    padding-top: 3.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #000;
+    z-index: 1001;
+  }
+
+  .nav-menu.active {
+    background: var(--Color-Black);
+    left: 0%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .nav-links:hover {
+    background-color: var(--Color--Liblue);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    font-size: 1rem;
+    display: initial;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin: 8px;
+  }
+
+  .fa-times {
+    color: var(--Color-White);
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: var(--Color--Liblue);
+    text-decoration: none;
+    color: var(--Color-White);
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: var(--Color-White);
+    color: var(--Color--Liblue);
+    transition: 250ms;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    padding-top: 3.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #000;
+    z-index: 1001;
+  }
+
+  .nav-menu.active {
+    background: var(--Color-Black);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .nav-links:hover {
+    background-color: var(--Color--Liblue);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .fa-times {
+    color: var(--Color-White);
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: var(--Color--Liblue);
+    text-decoration: none;
+    color: var(--Color-White);
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: var(--Color-White);
+    color: var(--Color--Liblue);
+    transition: 250ms;
+  }
+}
+@media screen and (max-width: 415px) {
+  .fa-caret-down {
+    display: none;
+  }
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    align-items: center;
+    left: -100%;
+    padding-top: 3.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #000;
+    z-index: 1001;
+  }
+
+  .nav-menu.active {
+    background: var(--Color-Black);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .nav-links:hover {
+    background-color: var(--Color--Liblue);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--Color-White);
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: var(--Color--Liblue);
+    text-decoration: none;
+    color: var(--Color-White);
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: var(--Color-White);
+    color: var(--Color--Liblue);
+    transition: 250ms;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .cars {
+    font-size: 18px;
+  }
+}

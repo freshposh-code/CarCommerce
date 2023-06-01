@@ -1,0 +1,310 @@
+:root {
+  --Color-Blue: blue;
+  --Color-White: white;
+  --color-whiteSmoke: whitesmoke;
+  --Color-Black: black;
+  --Color--Liblue: #1888ff;
+  --Color-Gold: rgb(255, 220, 22);
+  --Color-BlackAsh: rgb(61, 60, 60);
+  --color-Redishrange: rgb(255, 89, 0);
+}
+.preview {
+  padding: 2.5rem;
+}
+
+.car-div {
+  position: relative;
+  bottom: -20px;
+  left: -10px;
+  padding: 10px;
+  border: 1px solid var(--Color-Blue);
+  background-color: var(--Color-Blue);
+  color: var(--Color-White);
+}
+
+.preview-content p {
+  padding-top: 5px;
+  margin-left: 3.5rem;
+  font-size: 1.2rem;
+  font-family: fantasy;
+}
+
+.preview-content h1 {
+  color: var(--Color-Blue);
+  font-size: 2rem;
+}
+
+.empty-div1 {
+  border: 2px solid var(--Color-Blue);
+  width: 6rem;
+  margin-left: 3.5rem;
+}
+
+.empty-div2 {
+  border-bottom: 1px solid var(--Color-Black);
+  padding: 0.5rem;
+}
+
+.box-container .box-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.box-container .box-preview .box-preview-image {
+  position: relative;
+}
+
+.box-container .box-preview .box-preview-image .empty-box {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  background: var(--Color-BlackAsh);
+  color: var(--Color-White);
+  padding: 2rem;
+  transform: rotate(-42deg);
+}
+
+.box-container .box-preview .box-preview-image h4 {
+  position: absolute;
+  top: 46px;
+  left: 42px;
+  color: var(--Color-White);
+  font-size: 1.2em;
+  font-family: monospace;
+}
+
+.box-container .box-preview .box {
+  flex: 1 1 25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-preview img {
+  padding: 0.5rem;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box-preview img:hover {
+  transform: scale(1.01);
+  transition: 0.3s all ease-in-out;
+  border-radius: 15px;
+}
+
+.box-preview .box .car-preview-content {
+  position: relative;
+  padding: 1rem;
+}
+
+.box-preview .box .car-preview-content .Buttton {
+  margin: 0.5rem;
+  padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: var(--color-whiteSmoke);
+  color: var(--Color-Blue);
+  background: var(--color-whiteSmoke);
+}
+
+.box-preview .box .car-preview-content p {
+  padding: 0.5rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.box-container .box-preview .box .star-container {
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: var(--Color-Gold);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.product-spec {
+  display: flex;
+}
+
+.product-spec h3 {
+  margin-left: 0.4rem;
+  padding: 0.5rem;
+  background: var(--color-whiteSmoke);
+  cursor: pointer;
+}
+
+.box-container .box-preview .box .preview-button {
+  margin-top: 0.7em;
+  margin-left: 1em;
+  margin-bottom: 1.7em;
+}
+
+.box-container .box-preview .box .preview-link {
+  cursor: pointer;
+  padding: 0.5em 1.8em 0.5em 1.8em;
+  font-family: fantasy;
+  font-size: 1.1em;
+  background: var(--Color-Blue);
+  border: var(--Color-Blue);
+  color: var(--Color-White);
+}
+
+.box-container .box-preview .box .preview-link:hover {
+  background: rgb(75, 75, 255);
+  transition: 0.2s all ease-out;
+}
+
+.card-slider {
+  margin-top: 35px;
+  background: var(--color-whiteSmoke);
+  height: 75vh;
+  width: 100%;
+  padding: 30px;
+}
+
+.content-box {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.content-box .star-box {
+  color: var(--color-Redishrange);
+  line-height: 2.5;
+}
+
+.person-image img {
+  width: 130px;
+  height: 130px;
+  margin: 1rem;
+  border-radius: 90px;
+}
+
+.dsh {
+  border-bottom: 3px solid var(--Color-BlackAsh);
+  width: 5%;
+  margin: 1rem;
+}
+
+.content-box p {
+  color: var(--color-Redishrange);
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 320px) {
+  .preview-content .font {
+    font-size: 1px;
+  }
+
+  .box-container .box-preview {
+    padding: 1px;
+  }
+
+  .preview .preview-content p {
+    font-size: 0.8em;
+    padding-top: 1px;
+  }
+  .car-div {
+    padding: 2px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .card-slider {
+    margin-top: 35px;
+    background: var(--color-whiteSmoke);
+    height: 75vh;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .content-box h3 {
+    font-size: 0.9em;
+  }
+
+  .content-box p {
+    font-size: 0.9em;
+  }
+
+  .content-box h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .person-image img {
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  .preview-content .font {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .box-container .box-preview {
+    padding: 16px;
+  }
+  .preview-content h1 {
+    text-align: center;
+  }
+
+  .product-spec h3 {
+    font-size: 12px;
+  }
+
+  .preview .preview-content p {
+    font-size: 1em;
+    padding-top: 1px;
+  }
+}
+
+@media (max-width: 960px) {
+  .preview {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview-content h1 {
+    font-size: 2rem;
+  }
+
+  .preview-content p {
+    padding-top: 5px;
+    margin-left: 4.8rem;
+    font-size: 1.5rem;
+    font-family: fantasy;
+  }
+
+  .empty-div1 {
+    border: 2px solid var(--Color-Blue);
+    width: 6rem;
+    margin-left: 5.5rem;
+  }
+
+  .car-div {
+    position: relative;
+    bottom: -20px;
+    left: -20px;
+    padding: 15px;
+  }
+}
