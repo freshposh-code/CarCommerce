@@ -18,7 +18,7 @@ function Navbar() {
         <nav className="navbar">
           <Link to="/" className="nav-bar">
             <div>
-              <h2>Posh Carsss</h2>
+              <h2>Posh Cars</h2>
             </div>
             <div>
               <CarRental
