@@ -302,7 +302,7 @@ export const blog = [
     BlogImage5:
       "https://cdn.jdpower.com/JDPA_2022%20Lexus%20NX%20Gray%20Front%20Quarter%20Action.jpg",
     BlogImage6:
-      "https://toyotaassets.scene7.com/is/image/toyota/Lexus-IS-torsen-limitedslip-differential-moreperformance-tile-550x411-LEX-ISG-MY23-0036.01?wid=550&hei=411",
+      "https://www.topgear.com/sites/default/files/2023/05/1%20Lexus%20RX.jpg",
 
     BlogLink: "READ MORE",
   },
