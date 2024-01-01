@@ -7,25 +7,10 @@ import { CarRental } from "@mui/icons-material";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  // const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // const onMouseEnter = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(true);
-  //   }
-  // };
-  // const onMouseLeave = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(false);
-  //   }
-  // };
 
   return (
     <>
@@ -33,7 +18,7 @@ function Navbar() {
         <nav className="navbar">
           <Link to="/" className="nav-bar">
             <div>
-              <h2>Posh Cars</h2>
+              <h2>Posh Carsss</h2>
             </div>
             <div>
               <CarRental
