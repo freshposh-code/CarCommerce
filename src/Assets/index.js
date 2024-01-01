@@ -1,5 +1,5 @@
 import close from "./close.svg";
 import menu from "./menu.svg";
-import posh from "./posh.jpeg";
+import porsche from './Porsche-New-911.jpg'
 
-export { close, menu, posh };
+export { close, menu, porsche};

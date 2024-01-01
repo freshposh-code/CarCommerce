@@ -2,7 +2,6 @@ import React from "react";
 import "../Styles/AboutUs.css";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { teamstat } from "../../data";
-import { posh } from "../../Assets";
 
 export default function AboutUs() {
   return (

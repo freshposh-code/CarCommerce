@@ -1,8 +1,9 @@
+import { porsche } from "./Assets";
+
 export const imageSlider = [
   {
     id: 1,
-    ImageSlide:
-      "https://imgd.aeplcdn.com/0x0/cw/ec/39232/Porsche-New-911-Exterior-153677.jpg?wm=1",
+    ImageSlide: porsche,
     ImageSlide2: "https://i.redd.it/riwy3sv74g481.jpg",
     ImageSlide3:
       "https://www.motortrend.com/uploads/sites/5/2020/03/2021-Porsche-911-Turbo-S-Coupe-5.jpg?fit=around%7C875:492",
