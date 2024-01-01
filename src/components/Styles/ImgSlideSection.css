@@ -68,10 +68,7 @@
   }
 
   .slide-text p {
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: 1.5px;
-    margin-top: 1.5rem;
+   visibility: hidden;
   }
   .slide-container .slide-text {
     display: flex;
@@ -94,15 +91,6 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
-  .slide-text p {
-    margin-top: 1.5rem;
-    font-size: 1.5em;
-  }
-
-  .slide-container .slide-text p {
-    max-width: 150px;
-    width: 100%;
-  }
 }
 
 @media (max-width: 350px) {
@@ -112,11 +100,6 @@
   .slide-text h3 {
     margin: 1rem;
     font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .slide-text p {
-    margin-top: 1.5rem;
-    font-size: 0.8em;
     font-weight: bold;
   }
 }
