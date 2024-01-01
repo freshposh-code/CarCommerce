@@ -179,7 +179,7 @@ export const clientData = [
 export const spectations = [
   {
     specImage:
-      "https://www.dealertoyotaresmi.com/wp-content/uploads/2022/09/CAMRY2.png",
+      "https://zionauto.sg/images/car/toyota-camry/toyota-camry.png",
     specName: "Toyota Camry (Accent Sport Hybrid)",
     specName2: "Automatic Transmission",
     specs: ` Front-wheel drive four door ,powered by INLINE 4 engine that
@@ -210,7 +210,7 @@ export const spectations = [
   },
   {
     specImage:
-      "https://www.tesla.com/ownersmanual/images/GUID-999EC68D-FD44-4237-8AB8-AB97A724F3B0-online-en-US.png",
+      "https://i.pinimg.com/originals/ef/f2/91/eff29127abbf0d8e5e99cda29401fa7f.png",
     specName: "Tesla 2022 (Model X)",
     specName2: "Electric Transmission",
     specs: `Battery pack capacity, 200 kWh ; Max charging power (AC), 22 kW ; Max charging power (DC), 250 kW ; Avg. charging speed (DC)`,
